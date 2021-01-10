@@ -1,0 +1,10 @@
+header.header.container
+    a.logo(href="index.html")
+        img.logo__img(src="assets/img/logo.svg")
+    nav.navigation
+    - let values = [];
+        ul.menu
+        each item in values.length ? values : [{link: "index.html", title: "Home"}, {link: "about.html", title: "About us"}, {link: "#", title: "Portfolio"}, {link: "#", title: "Equipment"}, {link: "#", title: "Contacts"}]
+            - let {link, title} = item
+                li.menu__item
+                    a.menu__link(href = link)= title
