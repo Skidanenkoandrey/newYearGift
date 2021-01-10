@@ -42,6 +42,7 @@ module.exports = {
         rules: [{
             test: /\.js$/,
             loader: 'babel-loader',
+            exclude: /node-modules/,
         }, {
             test: /\.pug$/,
             loader: 'pug-loader',
